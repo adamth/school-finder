@@ -1,10 +1,13 @@
 var React = require("react");
-var SchoolInfo = require("./SchoolInfo.jsx")
+var {SchoolInfo} = require("./SchoolInfo.jsx")
 
-module.exports = React.createClass({
-   render:function(){
-       return(
-           <div className="row">
+class SchoolList extends React.Component {
+    constructor(props) {
+        super(props);
+    }
+    render() {
+        return(
+             <div className="row">
                 <div className="col-md-6">
                     //We will add addSchool functionality here
                 </div>
@@ -18,6 +21,8 @@ module.exports = React.createClass({
                     }
                 </div>
            </div>
-       )
-   } 
-});
+        );
+    }
+}
+
+module.exports = {SchoolList};
